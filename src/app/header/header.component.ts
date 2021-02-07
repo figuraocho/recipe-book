@@ -10,7 +10,7 @@ import { DataStorageService } from '../shared/data-storage.service';
 })
 export class HeaderComponent implements OnInit, OnDestroy {
   private userSub: Subscription;
-  private isAuthenticated: boolean = false;
+  public isAuthenticated: boolean = false;
 
   constructor(private dataStorageService: DataStorageService, private authService:AuthService) {}
 
